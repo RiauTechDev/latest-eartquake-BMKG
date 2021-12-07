@@ -10,7 +10,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="latestearthquake-Indonesia-BMKG",
-    version="0.3",
+    version="0.4",
     author="Christian Yurianja",
     author_email="riautechdev@gmail.com ",
     description="This package will get the latest earthquake from "
@@ -28,6 +28,7 @@ setuptools.setup(
         "Development Status :: 5 - Production/Stable"
     ],
     # package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src"),
+    # packages=setuptools.find_packages(where="src"),
+    packages=setuptools.find_packages(),
     python_requires=">=3.6",
 )

@@ -6,5 +6,14 @@ This package will scrape from [BMKG](https://www.bmkg.go.id ) to get latest eart
 
 This package will use BeautifulSoup4 and Requests  to produce output in the form of JSON that is ready to be used in web or mobile application.
 
+## HOW TO USE 
+```
+import latestearthquake
+
+if __name__ == '__main__':
+    result = latestearthquake.data_extraction()
+    latestearthquake.show_data(result)
+```
+
 # Author
 Christian Yurianja
