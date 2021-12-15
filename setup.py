@@ -1,5 +1,5 @@
 """
-https://packaging.python.org/tutorials/packaging-projects/
+Packaging Guide : https://packaging.python.org/tutorials/packaging-projects/
 Markdown Guide : https://www.markdownguide.org/cheat-sheet/
 """
 
@@ -10,7 +10,11 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="latestearthquake-Indonesia-BMKG",
-    version="0.8.1",
+    version="1.0.0",
+    install_requires=[
+        'beautifulsoup4',
+        'requests'
+    ],
     author="Christian Yurianja",
     author_email="riautechdev@gmail.com ",
     description="This package will get the latest earthquake from "
