@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 
+description = 'To get the latest earthquake in Indonesia from bmkg.go.id'
+
 
 # Extract data from Website
 
@@ -53,7 +55,6 @@ def data_extraction():
         output['coordinate'] = {'ls': ls, 'bt': bt}
         output['location'] = location
         output['perceived'] = perceived
-
         return output
     else:
         return None
@@ -64,7 +65,7 @@ def show_data(result):
     if result is None:
         print('Latest earthquake data is not found')
         return
-    print('Latest earthquacke based on BMKG')
+    print('Latest earthquake based on BMKG')
     print(f"Date: {result['date']}")
     print(f"Time: {result['time']}")
     print(f"Magnitude: {result['magnitude']}")
@@ -73,6 +74,8 @@ def show_data(result):
     print(f"Location: {result['location']}")
     print(f"Perceived: {result['perceived']}")
 
+
 if __name__ == '__main__':
     result = data_extraction()
-    show_data(result)
+    # show_data(result)
+    print(result)
